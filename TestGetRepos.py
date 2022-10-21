@@ -1,6 +1,6 @@
 import unittest
 
-from HW04GetRepos import fetchRepos
+from GetRepos import fetchRepos
 
 
 # This code implements the unit test functionality
