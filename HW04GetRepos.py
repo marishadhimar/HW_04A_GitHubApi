@@ -42,7 +42,7 @@ def fetchRepos(username):
 def main():
     """ Get user's Github ID as input """
 
-    user = input("Enter Github ID: ")
+    user = input("Please enter Github username: ")
     result = fetchRepos(user)
     print(result)
     return result
