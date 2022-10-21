@@ -7,12 +7,9 @@ from HW04GetRepos import fetchRepos
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
 class TestHW04GetRepos(unittest.TestCase):
     def testAPIA(self):
-        self.assertNotEqual(fetchRepos('maris'), "Repository with name maris doesn't exist!")
+        self.assertEqual(fetchRepos('mardhi'), "Repository doesn't exist!")
 
     def testAPIB(self):
-        self.assertEqual(fetchRepos('?'), "Repository with name ? doesn't exist!")
-
-    def testAPIC(self):
         self.assertEqual(fetchRepos('marishadhimar'), ['Repo: helloworld  Number of commits: 2','Repo: HW_04A_GitHubApi  Number of commits: 1','Repo: portfolio  Number of commits: 1','Repo: Simon-Game  Number of commits: 1','Repo: SSW_567_HW01  Number of commits: 14','Repo: SSW_567_HW02_A  Number of commits: 2','Repo: story  Number of commits: 2'])
 
 

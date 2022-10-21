@@ -25,7 +25,7 @@ def fetchRepos(username):
         try:
             repositoryList.append(repo['name'])
         except (TypeError, KeyError, IndexError):
-            return "Repository with name doesn't exist!"
+            return "Repository doesn't exist!"
 
     # Get Number of commits for each repository from repository list
     for repository in repositoryList:
