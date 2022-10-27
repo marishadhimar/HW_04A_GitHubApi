@@ -10,7 +10,7 @@ class TestHW04GetRepos(unittest.TestCase):
         self.assertNotEqual(fetchRepos('mardhi'), "Repository doesn't exist!")
 
     def testAPIB(self):
-        self.assertEqual(fetchRepos('marishadhimar'), ['Repo: helloworld  Number of commits: 2', 'Repo: HW_04A_GitHubApi  Number of commits: 10', 'Repo: portfolio  Number of commits: 1', 'Repo: Simon-Game  Number of commits: 1', 'Repo: SSW_567_HW01  Number of commits: 14', 'Repo: SSW_567_HW02_A  Number of commits: 2', 'Repo: story  Number of commits: 2'])
+        self.assertEqual(fetchRepos('marishadhimar'), ['Repo: helloworld  Number of commits: 2', 'Repo: HW_04A_GitHubApi  Number of commits: 13', 'Repo: portfolio  Number of commits: 1', 'Repo: Simon-Game  Number of commits: 1', 'Repo: SSW_567_HW01  Number of commits: 14', 'Repo: SSW_567_HW02_A  Number of commits: 2', 'Repo: story  Number of commits: 2'])
 
 
 if __name__ == '__main__':
